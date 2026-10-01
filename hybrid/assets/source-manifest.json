@@ -1,0 +1,53 @@
+{
+  "use": "今回の内部デザインモック用。公開使用の権利許諾を示さない。",
+  "assets": [
+    {
+      "file": "hakobune-exterior.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2013/02/3864500865_3f8cf08e9d_b.jpg",
+      "project": "雲海に浮かぶ箱舟",
+      "credit": "Toshihisa Ishii / Blitz Studio"
+    },
+    {
+      "file": "hakobune-dusk.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2013/02/3864482321_4193896a7f_b.jpg",
+      "project": "雲海に浮かぶ箱舟",
+      "credit": "Toshihisa Ishii / Blitz Studio"
+    },
+    {
+      "file": "hakobune-interior.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2013/02/3865246458_17857958d0_b.jpg",
+      "project": "雲海に浮かぶ箱舟",
+      "credit": "Toshihisa Ishii / Blitz Studio"
+    },
+    {
+      "file": "akadama.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2018/11/web-3801_680.jpg",
+      "project": "オーベルジュあかだま",
+      "credit": "撮影者は原ページで未確認"
+    },
+    {
+      "file": "gazebo.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2013/03/3fd38f88a9514acdda4491031bc1afc4.jpg",
+      "project": "Gazebo House",
+      "credit": "Satoshi Ikuma / TechniSaff"
+    },
+    {
+      "file": "vertical-horizon.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2013/03/0052.jpg",
+      "project": "Vertical / Horizon",
+      "credit": "Satoshi Ikuma / TechniSaff"
+    },
+    {
+      "file": "big-roof.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2013/03/1f9ec105d039865c0bdee083dfa41a5d1.jpg",
+      "project": "大きな屋根の家",
+      "credit": "Takayuki Mori"
+    },
+    {
+      "file": "big-roof-interior.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2013/03/IMG_17101.jpg",
+      "project": "大きな屋根の家",
+      "credit": "Takayuki Mori"
+    }
+  ]
+}
