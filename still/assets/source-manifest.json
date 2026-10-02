@@ -1,0 +1,66 @@
+{
+  "assets": [
+    {
+      "file": "akadama-3801.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2018/11/web-3801.jpg",
+      "size": [
+        1920,
+        1300
+      ],
+      "bytes": 1230481,
+      "project": "オーベルジュあかだま",
+      "credit": "撮影者は原ページで未確認"
+    },
+    {
+      "file": "akadama-3925.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2018/11/web-3925.jpg",
+      "size": [
+        1920,
+        1150
+      ],
+      "bytes": 1095375,
+      "project": "オーベルジュあかだま",
+      "credit": "撮影者は原ページで未確認"
+    },
+    {
+      "file": "akadama-3748.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2018/11/web-3748.jpg",
+      "size": [
+        1920,
+        1274
+      ],
+      "bytes": 1676441,
+      "project": "オーベルジュあかだま",
+      "credit": "撮影者は原ページで未確認"
+    },
+    {
+      "file": "akadama-3763.jpg",
+      "source_url": "http://www.inouesatoru.jp/wp-content/uploads/2018/11/web-3763.jpg",
+      "size": [
+        1920,
+        1282
+      ],
+      "bytes": 1051530,
+      "project": "オーベルジュあかだま",
+      "credit": "撮影者は原ページで未確認"
+    }
+  ],
+  "use": "既存作品を紹介するリブランディング検討用モック",
+  "optimized_web_assets": [
+    {
+      "file": "akadama-3801.webp",
+      "original": "akadama-3801.jpg",
+      "processing": "WebP encoding, original composition retained"
+    },
+    {
+      "file": "akadama-3748.webp",
+      "original": "akadama-3748.jpg",
+      "processing": "WebP encoding, original composition retained"
+    },
+    {
+      "file": "akadama-3763.webp",
+      "original": "akadama-3763.jpg",
+      "processing": "WebP encoding, original composition retained"
+    }
+  ]
+}
