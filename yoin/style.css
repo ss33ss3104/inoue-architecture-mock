@@ -197,3 +197,18 @@ main,footer{position:relative;background:var(--paper)}
 
 @media(max-width:760px){.header nav{font-size:9px;gap:10px}}
 @media(max-width:380px){.works-bottom .work-instruction{display:none}}
+/* Nature studies: persistent images beside each service, stacked on phones. */
+.service-list summary{grid-template-columns:30px minmax(0,1fr) clamp(160px,17vw,230px) 24px;gap:16px;align-items:center;min-height:170px}
+.service-name{font-size:clamp(26px,3.1vw,46px)}
+.service-visual{display:block;overflow:hidden;aspect-ratio:3/2}
+.service-visual picture,.service-visual img{display:block;width:100%;height:100%}
+.service-visual img{object-fit:cover;transition:transform 1.1s cubic-bezier(.16,1,.3,1)}
+.service-list summary:hover .service-visual img,.service-list details[open] .service-visual img{transform:scale(1.045)}
+@media(min-width:761px) and (max-width:1100px){.service-list summary{grid-template-columns:20px minmax(0,1fr) 148px 20px;gap:12px}.service-name{font-size:clamp(26px,3.2vw,36px)}}
+@media(max-width:760px){
+.service-list summary{grid-template-columns:18px minmax(0,1fr) 23px;gap:16px 13px;min-height:0;align-items:start}
+.service-index{grid-column:1;grid-row:1}.service-name{grid-column:2;grid-row:1;font-size:30px}
+.service-plus{grid-column:3;grid-row:1}.service-visual{grid-column:2/-1;grid-row:2;width:100%}
+.service-body{padding-right:0}
+}
+@media(prefers-reduced-motion:reduce){.service-visual img{transition:none;transform:none!important}}

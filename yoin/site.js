@@ -71,6 +71,13 @@ if (!reduce.matches) {
 const reveal = new IntersectionObserver(entries => entries.forEach(e => { if(!e.isIntersecting)return; if(!reduce.matches) e.target.animate([{transform:'translateY(105%)',opacity:0},{transform:'translateY(0)',opacity:1}],{duration:1000,easing:'cubic-bezier(.16,1,.3,1)'}); reveal.unobserve(e.target); }),{threshold:.2});
 $$('.reveal-line > span, .contact h2, .perspective h2').forEach(el=>reveal.observe(el));
 const photos = [['hakobune-exterior.jpg','雲海に浮かぶ箱舟 — Photo: Toshihisa Ishii / Blitz Studio'],['big-roof.jpg','大きな屋根の家 — Photo: Takayuki Mori'],['vertical-horizon.jpg','Vertical / Horizon — Photo: Satoshi Ikuma / TechniSaff']];
+const approachReveal = new IntersectionObserver(entries => entries.forEach(e => {
+  if(!e.isIntersecting)return;
+  if(!reduce.matches){const reverse=e.target.closest('details')===document.querySelector('.service-list details:nth-child(2)');e.target.animate([{opacity:.15,clipPath:reverse?'inset(0 0 0 100%)':'inset(0 100% 0 0)'},{opacity:1,clipPath:'inset(0)'}],{duration:1100,easing:'cubic-bezier(.16,1,.3,1)'});}
+  approachReveal.unobserve(e.target);
+}),{threshold:.18});
+$$('.service-visual picture').forEach(el=>approachReveal.observe(el));
+$$('.service-list details').forEach(el=>el.addEventListener('toggle',requestDraw));
 $$('.photo-open').forEach(b=>b.addEventListener('click',()=>{const [src,title]=photos[Number(b.dataset.photo)];const d=$('#photo-dialog');d.querySelector('img').src='../hybrid/assets/'+src;d.querySelector('img').alt=title;d.querySelector('figcaption').textContent=title;d.showModal();}));
 $('#credits-open').addEventListener('click',()=>$('#credits-dialog').showModal());
 $$('dialog').forEach(d=>{d.querySelector('.close').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close();});});
@@ -85,6 +92,6 @@ const spatialObserver=new IntersectionObserver(async entries=>{
 spatialObserver.observe($('.model-stage'));
 addEventListener('pagehide',event=>{
   video.pause();model?.setVisible(false);cancelAnimationFrame(frame);frame=0;
-  if(!event.persisted){model?.dispose();spatialObserver.disconnect();reveal.disconnect();}
+  if(!event.persisted){model?.dispose();spatialObserver.disconnect();reveal.disconnect();approachReveal.disconnect();}
 });
 addEventListener('pageshow',event=>{if(event.persisted){model?.setVisible(visible);loops();requestDraw();}});draw();
